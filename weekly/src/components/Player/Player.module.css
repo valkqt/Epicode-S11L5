@@ -1,0 +1,74 @@
+.playerBody {
+    max-width: 100%;
+    height: 10vh;
+    background-color: #282828;
+    color: #7A7A7A;
+    padding: 8px 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outerProgress {
+    background-color: #414141;
+    width: 800px;
+    height: 7px;
+}
+
+.innerProgress {
+    background-color: #3CD33C;
+    height: 7px;
+}
+
+.controlBox {
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    flex-grow: 1;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.songInfo {
+    color:white;
+    width: 15%;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.songInfo h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.progressTimer {
+    margin: 0;
+    /* margin-top: 8px; */
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    width: 15%;
+}
+
+.imgContainer {
+    width: 8vh;
+    height: 8vh;
+}
+
+.playerImg {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}

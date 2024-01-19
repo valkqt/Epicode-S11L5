@@ -1,0 +1,29 @@
+.mainPage {
+  overflow-y: scroll;
+  max-height: calc(90vh - 50px)
+}
+.fakeNav {
+  flex-basis: 100%;
+}
+
+
+.navList {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;  
+}
+
+.navList a {
+  color: #919191;
+  text-decoration: none;
+}
+
+.genreBox {
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+}

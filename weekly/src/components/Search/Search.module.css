@@ -1,0 +1,7 @@
+.resultsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: calc(90vh - 50px);
+}
+

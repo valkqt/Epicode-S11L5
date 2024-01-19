@@ -1,0 +1,13 @@
+.cardText {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 6px
+}
+
+.link {
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  flex-basis: 20%;
+}

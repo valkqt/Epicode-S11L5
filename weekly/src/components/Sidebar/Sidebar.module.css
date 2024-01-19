@@ -1,0 +1,111 @@
+
+.link {
+  color: #919191;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: white;
+}
+
+.sidebar {
+  width: 375px;
+  height: 90vh;
+  background-color: #000000;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #919191
+}
+
+.logoWrapper {
+  width: 175px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.searchInput {
+  padding: 7px;
+  border: 1px solid white;
+  color: black;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.searchInput:focus {
+  outline: 1px solid #3CD33C;
+}
+
+.submitButton {
+  padding: 8px;
+  background-color: #000000;
+  color: #919191;
+  border: 1px solid #919191;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.submitButton:hover {
+  background-color: #6C757D;
+  color: white;
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.sideNav {
+    padding-top: 1.5rem;
+}
+
+.userLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10px;
+  align-items: center;
+}
+
+.userButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 2.5rem;
+  border-radius: 24px;
+}
+
+.registerButton {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+}
+
+.registerButton:hover {
+  background-color: #3CD33C;
+  color: white;
+}
+
+.loginButton {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.loginButton:hover {
+  background-color: white;
+  color: black;
+}

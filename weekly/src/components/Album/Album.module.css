@@ -1,0 +1,54 @@
+.albumShowcase {
+    color: white;
+    text-align: center;
+    margin-top: 1rem
+}
+
+.imgContainer {
+    max-width: 400px;
+}
+
+.trackList {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.listItem {
+    color: white;
+    padding: 4px 16px;
+}
+
+.listItem:hover {
+    background-color: black;
+}
+
+
+
+.albumPage {
+    padding: 1rem;
+    display: flex;
+    overflow-y: scroll;
+    max-height: calc(90vh - 50px);
+    width: 100%;
+}
+
+.playButton {
+    background-color: #3CD33C;
+    color: white;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 24px;
+    margin: 0 auto;
+  
+  }
+  
+.playButton:hover {
+    background-color: #218838;
+    color: white;
+  }
+  

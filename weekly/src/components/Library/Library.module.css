@@ -1,0 +1,5 @@
+.libraryPage {
+    max-height: calc(90vh - 50px);
+    display: flex;
+    flex-wrap: wrap;
+}
