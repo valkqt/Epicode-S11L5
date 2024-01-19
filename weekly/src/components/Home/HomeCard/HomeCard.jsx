@@ -9,13 +9,6 @@ function HomeCard({ album, artist, cover, albumId, id }) {
 
   return (
     <Link to={`/album/${albumId}`} className={css.link}>
-      {/* <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={cover} />
-        <Card.Body>
-          <Card.Title>{artist}</Card.Title>
-          <Card.Text className={css.cardText}>{album}</Card.Text>
-        </Card.Body>
-      </Card> */}
       <div style={{maxWidth: "12rem"}}>
         <div>
           <img className="img-fluid"src={cover}/>

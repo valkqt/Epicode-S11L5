@@ -2,7 +2,7 @@ import css from "./Player.module.css";
 import * as Icon from "react-bootstrap-icons";
 import { useEffect, useState } from "react";
 import audio from "./test.mp3";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 let song = new Audio(audio);
 let currentTime = 0;
@@ -19,18 +19,12 @@ function Player() {
       inStorage.find((elem) => elem.id === selected?.id)
     );
   });
-  console.log("render");
-  console.log(isPlaying);
 
   useEffect(() => {
     if (isPlaying) {
       song.pause();
-      console.log("plofi");
-      console.log(isPlaying);
     } else {
       song.play();
-      console.log("pepe");
-      console.log(isPlaying);
     }
   }, [isPlaying]);
 

@@ -8,7 +8,6 @@ function Album({ onSelect }) {
   const params = useParams();
   const [results, setResults] = useState(null);
   const dispatch = useDispatch();
-  const test = useSelector((state) => state.selected);
 
   useEffect(() => {
     fetch(`https://deezerdevs-deezer.p.rapidapi.com/album/${params.albumId}`, {

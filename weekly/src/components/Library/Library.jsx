@@ -1,21 +1,29 @@
 import Container from "react-bootstrap/Container";
-import HomeCard from "../Home/HomeCard/HomeCard";
 import css from "./Library.module.css";
+import LibraryCard from "./LibraryCard/LibraryCard";
+import { useDispatch } from "react-redux";
 
 function Library() {
   const savedTracks = JSON.parse(localStorage.getItem("liked"))?.tracks ?? [];
-  console.log(savedTracks);
+  const dispatch = useDispatch();
 
   return (
     <Container as="main">
       <div className={css.libraryPage}>
         {savedTracks.map((elem) => {
           return (
-            <HomeCard
+            <LibraryCard
+              onClickSelect={() => {
+                dispatch({
+                  type: "SET_SELECTED",
+                  payload: elem,
+                });
+              }}
               key={elem.id}
               album={elem.album.title}
               artist={elem.artist.name}
               cover={elem.album.cover_xl}
+              song={elem.title}
               id={elem.id}
               albumId={elem.album.id}
             />
